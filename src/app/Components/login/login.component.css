@@ -1,0 +1,185 @@
+
+.footerCardLogin {
+    text-align: center;
+    padding-top: 15px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.input-group {
+    width: 100%;
+}
+
+
+.loginCard {
+    text-align: center;
+    padding-bottom: 15px;
+    background: rgba(11, 41, 54, 0.7);
+}
+
+/* Imagen de perfil */
+.loginCard-img {
+    width: 200px; 
+    height: 200px; 
+    border-radius: 50%; 
+    display: block; 
+    margin: 0 auto;
+    padding-bottom: 2px;
+}
+
+/* Estilo global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo del cuerpo */
+.body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    margin: 0; /* Asegúrate de que no hay márgenes en el body */
+}
+.imgFondo {
+    position: absolute; /* Asegura que la imagen esté fija en el fondo */
+    top: 0;
+    left: 0;
+    width: 100vw; /* Ancho completo de la ventana */
+    height: 100vh; /* Alto completo de la ventana */
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    z-index: -1; /* Asegura que esté detrás de otros elementos */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    background: rgba(34, 94, 121, 0.7); 
+    border-radius: 10px;
+    
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+    height: auto; /* Permite que el contenedor crezca verticalmente */
+    margin: 20px; /* Añade margen para asegurar espacio en pantallas pequeñas */
+}
+
+/* Sección izquierda */
+.left {
+
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.left .illustration {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Sección derecha */
+.right {
+    padding: 40px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    mask-image: linear-gradient(
+        black 90%,
+        transparent
+    );
+}
+form {
+    width: 100%;
+}
+
+/* Grupo de entradas */
+.input-group {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.forgot, .create-account {
+    display: block;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.forgot:hover, .create-account:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        max-width: 100%;
+        margin: 10px;
+    }
+
+    .left, .right {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    .right {
+        padding-top: 0;
+    }
+
+    
+    /* Asegurar que los inputs estén en una columna */
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-group {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .input-group input, button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
